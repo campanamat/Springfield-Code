@@ -1,0 +1,129 @@
+/* VENTANA MODAL SUSCRIBIRSE - MARTIN */
+.modal-sus-martin{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    z-index: 1000;
+}
+#mimodal-sus-martin:target{
+    opacity:1;
+    pointer-events:auto;
+}
+.modal-contenido-sus-martin{
+    background-color: #00afef;
+    width:80%;
+    height: auto;
+    box-sizing: content-box;
+    padding: 10px 10px;
+    margin: 5% auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+.modal-contenido-sus-martin > * {
+    margin: 5px;
+}
+.modal-logo-sus-martin {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+.modal-logo-sus-martin figure {
+    height: 100%;
+    margin: 0;
+}
+.modal-logo-sus-martin figure img {
+    width: 100%;
+    height: 100%;
+}
+.modal-titulo-sus-martin {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+}
+.modal-titulo-sus-martin h2 {
+    color: #0A0908;
+}
+.modal-titulo-sus-martin p {
+    font-size: 20px;
+}
+.modal-form-sus-martin {
+    width: 100%;
+    height: 100%;
+}
+.modal-form-sus-martin input::placeholder {
+    color: #FDD41E;
+}
+#modal-enviar-mail-sus-martin {
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #0A0908;
+}
+#modal-enviar-mail-sus-martin:hover {
+    border-color: #FDD41E;
+}
+#modal-enviar-mail-sus-martin:focus {
+    border-color: #FDD41E;
+}
+.modal-boton-siguiente-sus-martin {
+    font-family: simpsons;
+    margin: 10px;
+}
+.modal-boton-siguiente-sus-martin button {
+    width: 100px;
+    padding: 5px;
+    background-color: #FDD41E;
+    border: none;
+    border-radius: 5px;
+}
+.modal-boton-siguiente-sus-martin button:hover {
+    width: 140px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.modal-boton-siguiente-sus-martin button:active {
+    background-color: #00afef;
+    outline: 3px solid #FDD41E;
+}
+.modal-contenido-sus-martin a {
+    color: #FDD41E;
+    font-size: 24px;
+    text-decoration: none;
+}
+/* FIN VENTANA MODAL SUSCRIBIRSE - MARTIN */
+
+/* PANTALLAS CHICAS */
+@media screen and (max-width: 500px) {
+.modal-contenido-sus-martin {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: flex-end;
+    width: 80%;
+    height: auto;
+    box-sizing: content-box;
+    margin-bottom: 5%;
+}
+.modal-titulo-sus-martin h2 {
+    font-size: 20px;
+}
+.modal-titulo-sus-martin p {
+    font-size: 16px;
+}
+.modal-form-sus-martin {
+    width: 80%;
+}
+}

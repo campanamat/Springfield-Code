@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <title>Simpsons</title>
+    <!-- Links de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+<!-- Link de Icono -->
+    <link rel="icon" href="../assets/icono.ico">
+<!-- Link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Link de mi Css -Galileo -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<!-- Inicio de Header de -Galileo -->
+<header>
+    <a href="../index.html"><div class="logo-navbar-galileo"></div></a>
+    <input type="checkbox" id="btn-menu-galileo">
+    <label for="btn-menu-galileo"><i class="fa-solid fa-bars"></i></label>
+    <nav class="menu-navbar-galileo">
+        <ul>
+            <li><a href="../html/Login.html"><div class="login-navbar-galileo"></div></a></li>
+            <!-- Boton Modal Subs -->
+            <li><a href="#mimodal-sus-martin"><div class="suscribirse-navbar-galileo"></div></a></li>
+            <!-- Fin Boton Modal Subs -->
+            <li><a href="../html/contacto.html"><div class="contacto-navbar-galileo"></div></a></li>
+            <li><a href="../html/galeria.html"><div class="acerca-de-navbar-galileo"></div></a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Fin de Header de Galileo -->
+
+<!--incio blog Juli-->
+<body>
+<br><br>
+    <div class="container-titulo pt-5 mx-3 my-3">
+<h1>Los Simpson: el perturbador origen del nombre de Milhouse </h1>
+    </div>
+<div class="container-div ms-4 me-4">
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-lg-6">
+    <div class="cabin-image shadow"></div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+    <div class="cabin-text text-rigth mt-4"> “Milhouse” está inspirado en el expresidente norteamericano Richard Nixon: era su segundo nombre. El hombre que gobernó Estados Unidos entre 1969 y 1974 debió renunciar tras el escándalo de Watergate y se convirtió en el único presidente del país que debió abandonar su cargo.
+        El primer apellido del niño, “Mussolini”, por parte de su madre, refiere al exdictador italiano Benito Mussolini. Por último, está el apellido paterno de Milhouse, “Van Houten”, que los creadores de la serie tomaron de Leslie Van Houten, miembro de la familia Manson y hoy detenida por participar de los homicidios de Leno y Rosemary LaBianca en 1969.
+    </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="cabin-text2 text-center mt-4"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-div-video mx-4 mt-3 p-4">
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-lg-6">
+            <div class="text-div text-center mt-4">Acontinuación te dejamos un breve video de youtube donde Lisa planea ir a un viaje escolar a Italia para el próximo verano, para lo cual debe aprender italiano. Contrata a un profesor particular que descubre en un anuncio clasificado… y que sorprendentemente resulta ser Milhouse. <br>
+                En este capítulo 7 de la temporada 17 de los Simpson, por primera vez aparece la abuela de Milhouse y lo llama por su nombre completo.
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="container-video shadow ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rR4VPNW3KvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FORMULARIO PARA COMENTAR-->
+<div class="container-comentarios w-75 mt-5 ps-5 ms-5 rounded shadow">
+    <div class="row align-items-strech ">
+        <div class="col bg d-none d-lg-block col-md-6 col-lg-6 col-xl-6">
+        </div>
+        <div class="col pb-3">
+            <h2 class="fw-bold py-5 mb-1 texto">Comentá aquí</h2>
+            <form class="formulario" action="../html/404.html">
+                <div class="mb-3">
+                    <label for="name" class="form-label"></label>
+                    <input  class="edit-galileo" type="text" name="Nombre" id="" placeholder="Nombre y Apellido" required maxlength="50" minlength="6">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label"></label>
+                    <input  class="edit-galileo" type="email" name="email" id="" placeholder="Correo electrónico" required maxlength="50">
+                </div>
+                <textarea name="textarea" id="textarea" cols="25" rows="10" maxlength="110" placeholder="Mensaje" required></textarea>
+                <div class="d-grid me-3 mb-3">
+                    <button type="submit" class="btn btn-primary boton-comentar">Comentar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--COMENTARIOS-->
+<br><br><br>
+<div class="comentarios mx-4 mb-3">
+    <div class="titulo-comentarios">
+        <h3>Comentarios recientes</h3>
+        <hr>
+    </div>
+    <div class="container-card p-4">
+
+        <div class="col d-flex">
+    <div class="card mb-3 me-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../assets/i14.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">Kanjigar Sectum</h5>
+        <p class="card-text">Próximamente:
+            El oscuro secreto del Peinado de Marge !! 😱😱</p>
+        <p class="card-text"><small class="text-muted">Hace 1 mes</small></p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../assets/i15.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">Ian Sakalis</h5>
+        <p class="card-text">mi amigo: ¿cuantas casas hay en springfield?
+            yo: no sé 
+            mi amigo: mil house</p>
+        <p class="card-text"><small class="text-muted">Hace 1 año</small></p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="col d-flex">
+    <div class="card mb-3 me-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../assets/i16.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">Alex Durdatan</h5>
+        <p class="card-text">
+            Entonces es cierto lo que dice Marge, realmente milhouse es el responsable de sacar lo peor de Bart</p>
+        <p class="card-text"><small class="text-muted">Hace 1 mes</small></p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../assets/i17.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">boy jef</h5>
+        <p class="card-text">Yo:  mira que interesante 🤔
+            Homero Simpson: Aburrido!!!</p>
+        <p class="card-text"><small class="text-muted">Hace 1 año</small></p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="col d-flex">
+    <div class="card mb-3 me-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../Other/Diego-img.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">Diego con gorra</h5>
+        <p class="card-text">Me emocioné hasta las lagrimas con esta página. Este equipo se merece que le pague una coca!</p>
+        <p class="card-text"><small class="text-muted">Hace 1 mes</small></p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+        <img src="../Other/aguero-twitch.jpg_423682103.webp" class="img-fluid rounded-start" alt="">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">Kuni</h5>
+        <p class="card-text">Ojo al tejo eh! dejé lo joisti para ver tremendo blog. Aguante cod o war code or was como se diga</p>
+        <p class="card-text"><small class="text-muted">Hace 5 min</small></p>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- VENTANA MODAL SUSCRIBIRSE - MARTIN -->
+<div id="mimodal-sus-martin" class="modal-sus-martin">
+    <div class="modal-contenido-sus-martin">
+        <div class="modal-logo-sus-martin"><figure><img src="../img/Nobuenosi-vertical.jpg" alt="Logo SimpsonCode"></figure></div>
+        <div class="modal-titulo-sus-martin">
+            <h2>¿Quieres que inundemos tu bandeja con noticias mucho muy importantes?</h2>
+            <p>Ingresa tus datos para unirte a nuestra comunidad y recibir diariamente todas nuestras actualizaciones, noticias y mucho mas.</p>
+            <form class="modal-form-sus-martin" action="../html/404.html">
+                <input id="modal-enviar-mail-sus-martin" type="text" minlength="12" maxlength="40" required placeholder="Nombre">
+                <input id="modal-enviar-mail-sus-martin" type="password" minlength="4" maxlength="12" required placeholder="Contraseña">
+                <input id="modal-enviar-mail-sus-martin" type="email" minlength="12" maxlength="50" required placeholder="Email@algo.com">
+                <div class="modal-boton-siguiente-sus-martin"><button type="submit">Suscribirse</button></div>
+            </form>
+        </div>
+        <div class="modal-cerrar-sus-martin"><a href="#">X</a></div>
+    </div>
+</div>
+<!-- FIN VENTANA MODAL SUSCRIBIRSE - MARTIN-->
+
+    <!--Inicio de Footer de Martín-->
+    <footer>
+        <div class="grid-container-martin">
+                <div class="item3-footer-martin">
+                    <!-- Footer1 para el logo. Use figure para poder contener bien la img del logo -->
+                    <figure>
+                        <a href="#">
+                            <img src="../img/02.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            
+                <div class="item4-footer-martin">
+                    <!-- Footer2 para hablar sobre nosotros. -->
+                        <a href="../html/nosotros.html" target="self">
+                            <img src="../img/boton7.png" alt="Sobre Nosotros" width="300px" height="80px">
+                        </a>
+                </div>
+            
+                <div class="item5-footer-martin">
+                    <!-- Footer3 para poner las redes sociales. Decidi hacerlo minimalistas con solo 1 color, use iconos de fontawesome -->
+                    <h2>Seguinos:</h2>
+            
+                    <div class="social-media">
+                        <div><a href="#" class="fa fa-facebook"></a></div>
+                        <div><a href="#" class="fa fa-twitter"></a></div>
+                        <div><a href="#" class="fa fa-instagram"></a></div>
+                    </div>
+            
+                </div>
+            
+                <div class="item6-footer-martin">
+                    <!-- Footer4 para los derechos de autor. Decidi agregar esto para darle algo mas al footer -->
+                    <small>Copyright &copy; 2022 <b>CODE of war</b> - Todos los Derechos Reservados.</small>
+                </div>
+            
+            </div>
+    </footer>
+
+    <!--Fin de Footer de Martín-->
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Script FontAwesome Galileo -->
+<script src="https://kit.fontawesome.com/c8392acb0b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

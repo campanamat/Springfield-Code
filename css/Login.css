@@ -1,0 +1,206 @@
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #FABDC6 !important;
+}
+
+
+/* CONTENEDOR DEL LOGIN */
+#login-box{
+    margin: 20vh 30vw 6vh 30vw;
+    padding: 10vh 5vw 8vh 5vw ; 
+    background-color: #FDD41E;
+    border-radius: 20px;
+}
+/* IMAGEN DE PERFIL */
+#new-user-img{
+    position: absolute;
+    background-color: #FDD41E;
+}
+#cam-add-photo{
+    position: absolute;
+    opacity: 0;
+}
+#cam-add-photo:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* FORMULARIO DE LOGIN */
+#form-new-user{
+    float: left;
+    margin-left: 18vw;
+}
+.label-login-f{
+    background-color: #FDD41E;
+}
+#buttom-send-login{
+    background-color: #F5B6CF;
+    border: 3px solid #f79cc0;
+    outline: none;
+    padding: 1vh 4.5vw 1vh 4.5vw;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+/* Olvide mi contraseña - MARTIN */
+.mimodal-martin-box {
+    margin: 5px;
+}
+.modal-martin{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    z-index: 100;
+}
+#mimodal-martin:target{
+    opacity:1;
+    pointer-events:auto;
+}
+.modal-contenido-martin{
+    background-color:#0C897A;
+    width:50%;
+    padding: 10px 20px;
+    margin: 10% auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-contenido-martin > * {
+    margin: 6px;
+}
+.modal-logo-martin {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 120px;
+}
+.modal-logo-martin figure {
+    width: 100%;
+    height: 116px;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+.modal-logo-martin figure img {
+    width: 165px;
+    height: 100px;
+    padding: 5px;
+}
+.modal-titulo-martin h2 {
+    color: #0A0908;
+    
+}
+.modal-subtitulo-martin p {
+    color: #0A0908;
+}
+.modal-form-martin {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#modal-enviar-mail-martin {
+    width: 250px;
+padding: 10px;
+outline: none;
+border-radius: 5px;
+background: none;
+border: 2px solid #0A0908;
+}
+#modal-enviar-mail-martin:hover {
+    border-color: #FDD41E;
+}
+#modal-enviar-mail-martin:focus {
+    border-color: #FDD41E;
+}
+.modal-boton-siguiente-martin {
+    font-family: simpsons;
+    margin-top: 10px;
+}
+.modal-boton-siguiente-martin button {
+    width: 100px;
+    padding: 5px;
+    background-color: #FDD41E;
+    border: none;
+    border-radius: 5px;
+}
+.modal-boton-siguiente-martin button:hover {
+    width: 120px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.modal-contenido-martin a {
+    color: #FDD41E;
+}
+
+/* Pantallas chicas se adapta el input */
+@media screen and (max-width: 540px) {
+    #modal-enviar-mail-martin {
+        width: 180px;
+        padding: 5px;
+    }
+    .modal-contenido-martin{
+        width: 75%;
+    }
+}
+
+
+/* LOGIN CON FACEBOOK Y GOOGLE */
+#login-alt{
+    padding: 25vh 0vw 0vh 0vw;
+    text-align: center;
+    color: white;
+    margin-top: 10vh;
+}
+
+#login-google{
+    margin-top: 7vh ;
+    padding: 1.5vh 1vw ;
+    background-color: #CB2018;
+    cursor: pointer;
+    color: white;
+}
+#login-facebook{
+    margin-top: 5vh;
+    padding: 1.5vh 1vw;
+    background-color: #166BD8;
+    cursor: pointer;
+    color: white;
+}
+/* Esto es para quitar los estilos que agregan los "a" */
+a{
+    text-decoration: none !important;
+}
+/*CAMBIO DE TAMAÑO PARA PANTALLAS CHICAS*/
+@media (max-width: 992px) {
+    #login-box{
+        padding: 10vh 5vw 6vh 5vw ; 
+        margin:  20vh 10vw 5vh 10vw ;
+    }
+    #login-alt{
+        position: relative;
+        padding: 0;
+    }
+    #login-google {
+        margin-top: 0;
+    }
+    #form-new-user{
+        margin-top: 150px;
+        float: none;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box !important; 
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+
+/*styles JULI*/
+
+body{ 
+    background-color:#F5B6CF !important;
+}
+
+h1,h3{
+    font-family: simpsons;
+}
+
+.container-titulo{
+    padding-top: 30px;
+    display: flex;
+}
+.container-div{
+    display: grid;
+}
+
+.cabin-image{
+    background-image: url('../assets/i24.webp');
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    border-radius: 0.7em;
+}
+
+.container-video{
+    display:flex;
+}
+
+
+.bg{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    margin: 0 7% 0 -5%;
+}
+
+.container-card{
+    background-color: #BBA2CD;
+}
+
+
+#textarea{
+    width: 70%;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: #fff;
+    border: transparent !important;
+}
+
+.container-comentarios{
+    background-image: url("../assets/i13.jpg");
+    background-size: cover;
+}
+
+.texto {
+    color: #FFF212;
+}
+
+.boton-comentar {
+    width: 70%;
+    margin-top: 5%;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffd920 !important;
+    font-family: simpsons;
+    color:black !important;
+    border: transparent !important;
+}
+
+.edit-galileo {
+    background-color: rgba(0, 0, 0, 0.651);
+    color: #fff;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons</title>
+        <!-- Links de GoogleFonts -->
+            <link rel="icon" href="../Assets/icono.ico">
+        <!-- Links de GoogleFonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <!-- Link de Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Link de mi Css -Galileo -->
+            <link rel="stylesheet" href="../css/galeria.css">
+            <link rel="stylesheet" href="../css/navbar.css">
+            <link rel="stylesheet" href="../css/footer.css">
+            <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <!-- Inicio de Header de -Galileo -->
+    <header>
+        <a href="../index.html"><div class="logo-navbar-galileo animate__animated animate__lightSpeedInLeft"></div></a>
+        <input type="checkbox" id="btn-menu-galileo">
+        <label for="btn-menu-galileo"><i class="fa-solid fa-bars"></i></label>
+        <nav class="menu-navbar-galileo">
+            <ul>
+                <li><a href="../html/Login.html"><div class="login-navbar-galileo"></div></a></li>
+                <!-- Boton Modal Subs -->
+                <li><a href="#mimodal-sus-martin"><div class="suscribirse-navbar-galileo"></div></a></li>
+                <!-- Fin Boton Modal Subs -->
+                <li><a href="../html/contacto.html"><div class="contacto-navbar-galileo"></div></a></li>
+                <li><a href="../html/galeria.html"><div class="acerca-de-navbar-galileo"></div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de Header de Galileo -->
+    <!-- Inicio de Galeria de Galileo -->
+
+    <main class="imagen-fondo">
+        <section class="section-gal">
+            <h2>Galeria para descargar imagenes</h2>
+            <article class="galeria-galileo">
+                <div><img class="img-article-galileo" src="../assets/i1.png"></div>
+                <div><img class="img-article-galileo" src="../assets/i22.webp"></div>
+                <div><img class="img-article-galileo" src="../assets/i21.jpeg"></div>
+                <div><img class="img-article-galileo" src="../assets/i13.jpg"></div>
+                <div><img class="img-article-galileo" src="../assets/i2.png"></div>
+                <div><img class="img-article-galileo" src="../assets/i20.jpg"></div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Fin de Galeria de Galileo -->
+
+<!-- VENTANA MODAL SUSCRIBIRSE - MARTIN -->
+<div id="mimodal-sus-martin" class="modal-sus-martin">
+    <div class="modal-contenido-sus-martin">
+        <div class="modal-logo-sus-martin"><figure><img src="../img/Nobuenosi-vertical.jpg" alt="Logo SimpsonCode"></figure></div>
+        <div class="modal-titulo-sus-martin">
+            <h2>¿Quieres que inundemos tu bandeja con noticias mucho muy importantes?</h2>
+            <p>Ingresa tus datos para unirte a nuestra comunidad y recibir diariamente todas nuestras actualizaciones, noticias y mucho mas.</p>
+            <form class="modal-form-sus-martin" action="../html/404.html">
+                <input id="modal-enviar-mail-sus-martin" type="text" minlength="12" maxlength="40" required placeholder="Nombre">
+                <input id="modal-enviar-mail-sus-martin" type="password" minlength="4" maxlength="12" required placeholder="Contraseña">
+                <input id="modal-enviar-mail-sus-martin" type="email" minlength="12" maxlength="50" required placeholder="Email@algo.com">
+                <div class="modal-boton-siguiente-sus-martin"><button type="submit">Suscribirse</button></div>
+            </form>
+        </div>
+        <div class="modal-cerrar-sus-martin"><a href="#">X</a></div>
+    </div>
+</div>
+<!-- FIN VENTANA MODAL SUSCRIBIRSE - MARTIN-->
+
+    <!--Inicio de Footer de Martín-->
+<footer>
+    <div class="grid-container-martin">
+            <div class="item3-footer-martin">
+                <!-- Footer1 para el logo. Use figure para poder contener bien la img del logo -->
+                <figure>
+                    <a href="#">
+                        <img src="../img/02.png" alt="">
+                    </a>
+                </figure>
+            </div>
+        
+            <div class="item4-footer-martin">
+                <!-- Footer2 para hablar sobre nosotros. -->
+                    <a href="../html/nosotros.html" target="self">
+                        <img src="../img/boton7.png" alt="Sobre Nosotros" width="300px" height="80px">
+                    </a>
+            </div>
+        
+            <div class="item5-footer-martin">
+                <!-- Footer3 para poner las redes sociales. Decidi hacerlo minimalistas con solo 1 color, use iconos de fontawesome -->
+                <h2>Seguinos:</h2>
+        
+                <div class="social-media">
+                    <div><a href="#" class="fa fa-facebook"></a></div>
+                    <div><a href="#" class="fa fa-twitter"></a></div>
+                    <div><a href="#" class="fa fa-instagram"></a></div>
+                </div>
+        
+            </div>
+        
+            <div class="item6-footer-martin">
+                <!-- Footer4 para los derechos de autor. Decidi agregar esto para darle algo mas al footer -->
+                <small>Copyright &copy; 2022 <b>CODE of war</b> - Todos los Derechos Reservados.</small>
+            </div>
+        
+        </div>
+</footer>
+
+
+
+
+
+    <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Script FontAwesome Galileo -->
+        <script src="https://kit.fontawesome.com/c8392acb0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

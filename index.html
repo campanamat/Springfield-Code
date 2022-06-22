@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons</title>
+        <!--Link de Animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Links de Icono -->
+            <link rel="icon" href="Assets/icono.ico">
+        <!-- Links de GoogleFonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <!-- Link de Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Link de mi Css -Galileo -->
+            <link rel="stylesheet" href="Css/estilos.css">
+            <link rel="stylesheet" href="Css/navbar.css">
+            <link rel="stylesheet" href="css/footer.css">
+            <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <!-- Un Autoplay para ver como queda -->
+    <Audio autoplay src="audio/m2.mp3"></Audio>
+    <!-- Inicio de Header de -Galileo -->
+        <header>
+        <a href="../index.html"><div class="logo-navbar-galileo animate__animated animate__lightSpeedInLeft"></div></a>
+        <input type="checkbox" id="btn-menu-galileo">
+        <label for="btn-menu-galileo"><i class="fa-solid fa-bars"></i></label>
+        <nav class="menu-navbar-galileo">
+            <ul>
+                <li><a href="html/Login.html"><div class="login-navbar-galileo"></div></a></li>
+                <!-- Boton Modal Subs -->
+                <li><a href="#mimodal-sus-martin"><div class="suscribirse-navbar-galileo"></div></a></li>
+                <!-- Fin Boton Modal Subs -->
+                <li><a href="html/contacto.html"><div class="contacto-navbar-galileo"></div></a></li>
+                <li><a href="html/galeria.html"><div class="acerca-de-navbar-galileo"></div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de Header de Galileo -->
+
+<!-- VENTANA MODAL SUSCRIBIRSE - MARTIN -->
+<div id="mimodal-sus-martin" class="modal-sus-martin">
+    <div class="modal-contenido-sus-martin">
+        <div class="modal-logo-sus-martin"><figure><img src="img/Nobuenosi-vertical.jpg" alt="Logo SimpsonCode"></figure></div>
+        <div class="modal-titulo-sus-martin">
+            <h2>¿Quieres que inundemos tu bandeja con noticias mucho muy importantes?</h2>
+            <p>Ingresa tus datos para unirte a nuestra comunidad y recibir diariamente todas nuestras actualizaciones, noticias y mucho mas.</p>
+            <form class="modal-form-sus-martin" action="../html/404.html">
+                <input id="modal-enviar-mail-sus-martin" type="text" minlength="12" maxlength="40" required placeholder="Nombre">
+                <input id="modal-enviar-mail-sus-martin" type="password" minlength="4" maxlength="12" required placeholder="Contraseña">
+                <input id="modal-enviar-mail-sus-martin" type="email" minlength="12" maxlength="50" required placeholder="Email@algo.com">
+                <div class="modal-boton-siguiente-sus-martin"><button type="submit">Suscribirse</button></div>
+            </form>
+        </div>
+        <div class="modal-cerrar-sus-martin"><a href="#">X</a></div>
+    </div>
+</div>
+<!-- FIN VENTANA MODAL SUSCRIBIRSE - MARTIN-->
+
+    <!-- Inicio de "Slider" de Galileo -->
+    <div id="carousel-galileo" class="carousel slide contenedor-galileo" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-galileo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-galileo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-galileo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-galileo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/01.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/02.png " class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/03.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/04.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-galileo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-galileo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+        </div>
+        
+        <!-- Fin de "Slider" de Galileo -->
+        
+        <!-- Inicio de Columnas -->
+    <main class="fondo-contenedor">
+        <div class="contenedor-ambas-columnas">
+            <div class="first-column-lobby">
+                <div id="first-column-lobby">
+                    <img src="Assets/i23.jpg" alt="Ned Flanders justo a sus difuntas esposas" class="new-col1-img">
+                    <h5>La maldicion de Ned Flanders</h5>
+                    <p>Su vida amorosa es peor que la tuya? Entrá y descubrí la trágica suerte que tiene este personaje</p>
+                    <a href="html/entrada1.html">Leer mas</a>
+                </div>
+                <div class="second-column-lobby">
+                    <img src="assets/i22.webp" class="new-col1-img">
+                    <h5>¿Smithers tiene un hermano?</h5>
+                    <p>Alguna vez lo volviste a ver? Un curioso personaje desaparecido desde la temporada uno</p>
+                    <a href="html/entrada2.html">Leer mas</a>
+                </div>
+                <div class="three-column-lobby">
+                    <img src="./Assets/i21.jpeg" class="new-col1-img">
+                    <h5>¿Michael Jackson estuvo en Los Simpsons?</h5>
+                    <p>Curiosísimo dato sobre el rey del pop, descubrilo!</p>
+                    <a href="html/entrada3.html">Leer mas</a>
+                </div>
+            </div>
+            <div class="contenido-medio animate__animated animate__fadeInDown">
+                <iframe src="https://www.youtube.com/embed/7MJBeAyU1As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="segunda-col-galileo">
+                <form>
+                    <label for="busqueda"></label>
+                    <input type="text" id="busqueda" class="buscador-galileo" placeholder="Buscar">
+                </form>
+                <div class="categorias-galileo">
+                    <ul class="fondo-lista-galileo">
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Ultimas Novedades</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Springfield Noticias</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Shellbyville Noticias</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Mejores momentos de homero</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Deportes extremos</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Recetas perdidas</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Lo mas nuevo en cine</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i><a href="html/404.html">Lo mejor de la semana</a></li>
+                    </ul>
+                </div>
+                <div class="publicidad-galileo"></div>
+                <a href="html/blog.html" class="ov-btn-slide-right">CURIOSIDAD EXTRA</a>
+            </div>
+        </div>
+    </main>
+    <!-- Fin de Columnas -->
+    
+    <!--Inicio de Footer de Martín-->
+    <footer class="footer">
+        <div class="grid-container-martin">
+                <div class="item3-footer-martin">
+                    <!-- Footer1 para el logo. Use figure para poder contener bien la img del logo -->
+                    <figure>
+                        <a href="#">
+                            <img src="img/02.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            
+                <div class="item4-footer-martin">
+                    <!-- Footer2 para hablar sobre nosotros. -->
+                        <a href="html/nosotros.html" target="self">
+                            <img src="img/boton7.png" alt="Sobre Nosotros" width="300px" height="80px">
+                        </a>
+                </div>
+            
+                <div class="item5-footer-martin">
+                    <!-- Footer3 para poner las redes sociales. Decidi hacerlo minimalistas con solo 1 color, use iconos de fontawesome -->
+                    <h2>Seguinos:</h2>
+            
+                    <div class="social-media">
+                        <div><a href="#" class="fa fa-facebook"></a></div>
+                        <div><a href="#" class="fa fa-twitter"></a></div>
+                        <div><a href="#" class="fa fa-instagram"></a></div>
+                    </div>
+            
+                </div>
+            
+                <div class="item6-footer-martin">
+                    <!-- Footer4 para los derechos de autor. Decidi agregar esto para darle algo mas al footer -->
+                    <small>Copyright &copy; 2022 <b>CODE of war</b> - Todos los Derechos Reservados.</small>
+                </div>
+            
+            </div>
+    </footer>
+
+    <!--Fin de Footer de Martín-->
+    
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Script FontAwesome Galileo -->
+    <script src="https://kit.fontawesome.com/c8392acb0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

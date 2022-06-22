@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+
+/*-----------Error 404-----------*/
+.container_matias_404 {
+    background-color: #FABDC6;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.img_404{
+    width: 700px;
+    padding-top: 150px;
+}
+.texto_404{
+    font-family: simpsons;
+    font-size: 30px;
+    padding: 0px;
+}
+.boton_volver{
+    height: 80px;
+    padding-bottom: 20px;
+}
+.footer_404{
+    background-color: #FABDC6;
+    padding:0.5rem
+}
+/*-----------Error 404-----------*/
+
+
+@media screen and (max-width:970px){
+    /*---------error404---------*/
+    .img_404{
+        width: 350px;
+        padding-top: 120px;
+    }
+    .texto_404{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .boton_volver{
+        height: 50px;
+        padding-bottom: 20px;
+    }
+    .footer_404{
+        background-color: #FABDC6;
+        padding:8rem
+    }
+    /*---------error404---------*/
+    @keyframes desplazamiento {
+}
+}

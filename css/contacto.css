@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: simpsons;
+    src: url(../Estilos/Simpsonfont.otf);
+} 
+
+
+
+/*Inicio de Página de contacto Galileo*/
+
+.imagen-fondo-galileo {
+    background-image: url("../assets/i11.webp");
+    background-size: cover;
+    height: 150vh;
+}
+
+.formulario-contacto-galileo {
+    position: absolute;
+    top: 20%;
+    max-width: 1170px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .9);
+}
+
+.formulario-contacto-galileo > * {
+    padding: 1em;
+    color: white;
+}
+
+.contact-form1-galileo {
+    background-color: #22222298;
+}
+.contact-form1-galileo form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+.contact-form1-galileo form p{
+    margin: 0;
+    padding: 1.1em;
+}
+.contact-form1-galileo form button,
+.contact-form1-galileo form input,
+.contact-form1-galileo form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    color: white;
+    outline: 0;
+    border-bottom: 2px solid #0caff0;
+}
+.contact-form1-galileo form button{
+    background-color: #0caff0;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: black;
+    transform: translateY(110%);
+}
+
+.contact-form1-galileo form button:hover,
+.contact-form1-galileo form button:focus{
+    background-color: #00b7ffa4;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-form2-galileo {
+    background-color: rgba(0, 0, 0, 0.781);
+    background-image: url("../assets/i12.jpg");
+    background-size: cover;
+}
+.contact-form2-galileo i{
+    margin-right: 10px;
+}
+#ubic-icon-gal{
+    color: #df5b5b;
+}
+#phone-icon-gal{
+    color: #0caff0;
+}
+#mail-icon-gal{
+    color: #e1f00c;
+}
+.contact-form2-galileo h4,
+.contact-form2-galileo ul,
+.contact-form2-galileo p {
+    text-align: center;
+    margin: 0 0 20px 0;
+    list-style: none;
+    padding: 4px;
+}
+.contact-form2-galileo li {
+    padding: 5px;
+}
+
+.contact-form2-galileo iframe {
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+}
+
+@media screen and (min-width: 800px){
+    .formulario-contacto-galileo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .formulario-contacto-galileo > * {
+        padding: 2em;
+    }
+
+    .contact-form2-galileo h4,
+    .contact-form2-galileo ul {
+        padding: 0.5em;
+        text-align: left;
+    }
+    .contact-form2-galileo p{
+        text-align: center;
+    }
+    .formulario-contacto-galileo {
+        top: 20%;
+        left: 10%;    
+
+}
+@media screen and (min-width:600px) {
+    .contact-form2-galileo {
+        background-color: rgba(0, 0, 0, 0.781);
+        background-image: none;
+    }
+}
+}
+
+/*Fin de Página de contacto Galileo*/

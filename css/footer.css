@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+
+
+    /* Inicio de Footer Martín */
+    .grid-container-martin {
+    display: grid;
+    grid-template-areas:    'header header header'
+                            'main main main'
+                            'footer1 footer2 footer3'
+                            'footer4 footer4 footer4';
+}
+
+.grid-container-martin div {
+    text-align:center;
+}
+
+
+.item3-footer-martin {
+    grid-area: footer1;
+    background-color: #00afef;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 120px;
+}
+
+.item3-footer-martin figure {
+    width: 100%;
+    height: 116px;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+
+.item3-footer-martin figure img {
+    width: 240px;
+    height: 116px;
+}
+
+.item4-footer-martin {
+    grid-area: footer2;
+    background-color: #00afef;
+    height: 120px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.item4-footer-martin h2 {
+    margin: 5px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.item4-footer-martin p {
+    margin: 5px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.item5-footer-martin {
+    grid-area: footer3;
+    background-color: #00afef;
+    height: 120px;
+}
+
+.item5-footer-martin h2 {
+    margin: 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.item5-footer-martin .social-media {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+
+.item5-footer-martin .social-media a{
+    text-decoration: none;
+    width: 54px;
+    height: 24px;
+    line-height: 24px;
+    color: #000000;
+    font-size: 28px;
+}
+
+.item6-footer-martin {
+    grid-area: footer4;
+    background-color: #00afef;
+}
+
+/* Esta es la medida para pantallas chicas */
+@media screen and (max-width: 600px) {
+    .grid-container-martin {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'main main main'
+        'footer1 footer1 footer1'
+        'footer2 footer2 footer2'
+        'footer3 footer3 footer3'
+        'footer4 footer4 footer4';
+    }
+
+    .item3-footer-martin {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item3-footer-martin figure {
+        display: grid;
+        justify-content: center;
+}
+
+.item3-footer-martin figure img {
+    width: 320px;
+}
+
+.item4-footer-martin {
+    display: flex;
+    align-items: center;
+}
+}
+/* Esta es la medida para pantallas medianas */
+@media screen and (min-width: 600px) {
+    .grid-container-martin {
+        display: grid;
+        grid-template-areas: 'header header header header'
+        'main main main main'
+        'footer1 footer1 footer2 footer2'
+        'footer3 footer3 footer3 footer3'
+        'footer4 footer4 footer4 footer4';
+    }
+
+    .item3-footer-martin figure {
+        display: grid;
+        justify-content: center;
+    }
+
+
+.item3-footer-martin figure img {
+    width: 400px;
+}
+
+.item4-footer-martin {
+    display: flex;
+    align-items: center;
+}
+}
+
+/* Esta es la medida para pantallas grandes.*/
+
+@media screen and (min-width: 900px) {
+    .grid-container-martin {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'main main main'
+        'footer1 footer2 footer3'
+        'footer4 footer4 footer4';
+    }
+
+    .item3-footer-martin figure {
+        display: grid;
+        justify-content: start;
+    }
+
+    .item3-footer-martin figure img {
+        width: 240px;
+    }
+
+    .item4-footer-martin {
+        display: flex;
+        align-items: center;
+    }
+}
+    /* Fin de Footer Martín */
+
+
+    /* MEDIA QUERIES */
+    
+    @media screen and (max-width:970px){
+        header {
+            height: 11.2vh;
+            background-color:  #00AFEF;
+        }
+        header label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 42px 30px;
+        }
+        .menu-navbar-galileo {
+            position: absolute;
+            background-color:  #00afefe0;
+            width: 70%;
+            margin-left: -100%;
+        }
+        .menu-navbar-galileo ul {
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+            transform: translate(0, 0);
+        }
+        .menu-navbar-galileo ul li {
+            padding-top: 5px;
+        }
+        #btn-menu-galileo:checked ~ .menu-navbar-galileo {
+            margin: 0;
+        }
+        .logo-navbar-galileo {
+            width: 190px;
+            height: 70px;
+            left: 35%;
+        }
+        @keyframes desplazamiento {
+            0%{
+                transform: translate(10%, 10%);
+            }
+            100%{
+                transform: translate(0%, 0%);
+            }
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .contenedor-ambas-columnas {
+            flex-direction: column;
+        }
+        .first-column-lobby{
+            width: 100vw;
+            height: 165vh;
+            border: none;
+        }
+        .segunda-col-galileo {
+            float: none;
+            width: 100vw;
+            align-items: stretch;
+            font-size: 19px;
+            height: 100vh;
+            border-left: none;
+        }
+        .buscador-galileo {
+            width: 70vw;
+            margin-left: 5vw;
+        }
+        .publicidad-galileo{
+            display: none;
+        }
+        .ov-btn-slide-right {
+            border: none;
+        }
+        .contenido-medio iframe {
+            width: 100vw; 
+            height: 60vh;
+            margin: 0; 
+        }
+    }
+    @media screen and (min-width:769px) and (max-width:1074px){
+        .segunda-col-galileo{
+            height: 155vh;
+        }
+        .first-column-lobby {
+            width: 77vw;
+        }
+        .publicidad-galileo {
+            display: none;
+        }
+        .ov-btn-slide-right{
+            margin-top: 20px;
+        }
+    }
+/*Fin de Segunda Columna-Galileo*/
+

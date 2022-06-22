@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons</title>
+        <!--Link de Animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Links de GoogleFonts -->
+            <link rel="icon" href="../assets/icono.ico">
+        <!-- Links de GoogleFonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <!-- Link de Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Link de mi Css -Galileo -->
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/modal.css">
+        
+</head>
+<body>
+    <!-- Inicio de Header de -Galileo -->
+    <header>
+        <a href="../index.html"><div class="logo-navbar-galileo animate__animated animate__lightSpeedInLeft"></div></a>
+        <input type="checkbox" id="btn-menu-galileo">
+        <label for="btn-menu-galileo"><i class="fa-solid fa-bars"></i></label>
+        <nav class="menu-navbar-galileo">
+            <ul>
+                <li><a href="../html/Login.html"><div class="login-navbar-galileo"></div></a></li>
+                <!-- Boton Modal Subs -->
+                <li><a href="#mimodal-sus-martin"><div class="suscribirse-navbar-galileo"></div></a></li>
+                <!-- Fin Boton Modal Subs -->
+                <li><a href="../html/contacto.html"><div class="contacto-navbar-galileo"></div></a></li>
+                <li><a href="../html/galeria.html"><div class="acerca-de-navbar-galileo"></div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de Header de Galileo -->
+
+<!-- VENTANA MODAL SUSCRIBIRSE - MARTIN -->
+<div id="mimodal-sus-martin" class="modal-sus-martin">
+    <div class="modal-contenido-sus-martin">
+        <div class="modal-logo-sus-martin"><figure><img src="../img/Nobuenosi-vertical.jpg" alt="Logo SimpsonCode"></figure></div>
+        <div class="modal-titulo-sus-martin">
+            <h2>¿Quieres que inundemos tu bandeja con noticias mucho muy importantes?</h2>
+            <p>Ingresa tus datos para unirte a nuestra comunidad y recibir diariamente todas nuestras actualizaciones, noticias y mucho mas.</p>
+            <form class="modal-form-sus-martin" action="../html/404.html">
+                <input id="modal-enviar-mail-sus-martin" type="text" minlength="12" maxlength="40" required placeholder="Nombre">
+                <input id="modal-enviar-mail-sus-martin" type="password" minlength="4" maxlength="12" required placeholder="Contraseña">
+                <input id="modal-enviar-mail-sus-martin" type="email" minlength="12" maxlength="50" required placeholder="Email@algo.com">
+                <div class="modal-boton-siguiente-sus-martin"><button type="submit">Suscribirse</button></div>
+            </form>
+        </div>
+        <div class="modal-cerrar-sus-martin"><a href="#">X</a></div>
+    </div>
+</div>
+<!-- FIN VENTANA MODAL SUSCRIBIRSE - MARTIN-->
+
+    <!-- Inicio de "Contactos" de Galileo -->
+
+    <main class="imagen-fondo-galileo">
+        <section>
+            <article>
+            <div class="formulario-contacto-galileo">
+                <div class="contact-form1-galileo">
+                    <h3>Contanos que te pareció</h3>
+                    <form>
+                        <p>
+                            <label for="nombre-completo">Nombre y apellido</label>
+                            <input type="text" name="nombre-completo" required maxlength="40">
+                        </p>
+                        <p>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" required maxlength="40">
+                        </p>
+                        <p>
+                            <label for="celular">Número de celular</label>
+                            <input type="tel" name="celular"
+                            required maxlength="10">
+                            <small>Sin usar el "+" y sin comenzar con 15</small>
+                        </p>
+                        <p>
+                            <label for="email">Confirmar correo</label>
+                            <input type="email" name="email" required maxlength="40">
+                        </p>
+                        <p class="block">
+                            <label for="textarea">Mensaje</label>
+                            <textarea name="textarea" id="" cols="30" rows="3" maxlength="120"></textarea>
+                            <small>Máximo 120 caracteres</small>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-form2-galileo">
+                    <h4>Más info</h4>
+                    <ul>
+                        <li><i id="ubic-icon-gal" class="fa-solid fa-location-dot"></i>Tucumán, Argentina</li>
+                        <li><i id="phone-icon-gal" class="fa-solid fa-phone"></i>+54 381 4129058</li>
+                        <li><i id="mail-icon-gal" class="fa-solid fa-envelope-open-text"></i>springfieldcode@rolling.school</li>
+                    </ul>
+                    <p>Espero que hayan disfrutado su estadía junto a nosotros,
+                        deseamos que vuelvas pronto! Te saluda la familia de Rolling.
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1023707774903!2d-65.20939048490105!3d-26.836696096501864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1648334905512!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Springfield code</p>
+                </div>
+            </div>
+            </article>
+        </section>
+
+
+    <!-- Fin de "Contactos" de Galileo -->
+
+
+
+    <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Script FontAwesome Galileo -->
+        <script src="https://kit.fontawesome.com/c8392acb0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

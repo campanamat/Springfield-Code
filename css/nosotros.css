@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+.col{
+
+    padding: 5vh 20vw !important;
+}
+.fondo{
+background-image: url("../assets/i9.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;}
+
+.imagen_01{
+    background-image: url(../img/cara_s01.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_01:hover {
+    background-image: url(../img/cara_n01.png);}
+.imagen_02{
+    background-image: url(../img/cara_s02.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_02:hover {
+    background-image: url(../img/cara_n02.png);}
+.imagen_03{
+    background-image: url(../img/cara_s03.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_03:hover {
+    background-image: url(../img/cara_n03.png);}
+.imagen_04{
+    background-image: url(../img/cara_s04.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_04:hover {
+    background-image: url(../img/cara_n04.png);}
+.imagen_05{
+    background-image: url(../img/cara_s05.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_05:hover {
+    background-image: url(../img/cara_n05.png);}
+.imagen_06{
+    background-image: url(../img/cara_s06.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_06:hover {
+    background-image: url(../img/cara_n06.png);}
+.imagen_07{
+    background-image: url(../img/cara_s07.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;}
+.imagen_07:hover {
+    background-image: url(../img/cara_n07.png);}
+    
+
+.Imagen_8{
+background-image: url(../img/Equipo.jpg);
+max-width: 400px !;
+}
+
+
+@media screen and (max-width:770px){
+    .col-md-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .notros{
+        display:none;}
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons</title>
+    <link rel="icon" href="../assets/icono.ico">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo-navbar-galileo"></div>
+        <input type="checkbox" id="btn-menu-galileo">
+        <label for="btn-menu-galileo"><i class="fa-solid fa-bars"></i></label>
+        <nav class="menu-navbar-galileo">
+            <ul>
+                <li><a href="../html/Login.html"><div class="login-navbar-galileo"></div></a></li>
+                <!-- Boton Modal Subs -->
+                <li><a href="#mimodal-sus-martin"><div class="suscribirse-navbar-galileo"></div></a></li>
+                <!-- Fin Boton Modal Subs -->
+                <li><a href="../html/contacto.html"><div class="contacto-navbar-galileo"></div></a></li>
+                <li><a href="../html/galeria.html"><div class="acerca-de-navbar-galileo"></div></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- VENTANA MODAL SUSCRIBIRSE - MARTIN -->
+<div id="mimodal-sus-martin" class="modal-sus-martin">
+    <div class="modal-contenido-sus-martin">
+        <div class="modal-logo-sus-martin"><figure><img src="../img/Nobuenosi-vertical.jpg" alt="Logo SimpsonCode"></figure></div>
+        <div class="modal-titulo-sus-martin">
+            <h2>¿Quieres que inundemos tu bandeja con noticias mucho muy importantes?</h2>
+            <p>Ingresa tus datos para unirte a nuestra comunidad y recibir diariamente todas nuestras actualizaciones, noticias y mucho mas.</p>
+            <form class="modal-form-sus-martin" action="../html/404.html">
+                <input id="modal-enviar-mail-sus-martin" type="text" minlength="12" maxlength="40" required placeholder="Nombre">
+                <input id="modal-enviar-mail-sus-martin" type="password" minlength="4" maxlength="12" required placeholder="Contraseña">
+                <input id="modal-enviar-mail-sus-martin" type="email" minlength="12" maxlength="50" required placeholder="Email@algo.com">
+                <div class="modal-boton-siguiente-sus-martin"><button type="submit">Suscribirse</button></div>
+            </form>
+        </div>
+        <div class="modal-cerrar-sus-martin"><a href="#">X</a></div>
+    </div>
+</div>
+<!-- FIN VENTANA MODAL SUSCRIBIRSE - MARTIN-->
+
+    <main class="new-main">
+        <img src="../Assets/i23.jpg"  alt="Ned Flanders justo a sus difuntas esposas" class="img-new-main">
+        <h5 class="title-main-new">La maldicion de Ned Flanders</h5>
+        <p class="text-main-new">A Ned Flanders lo persigue desgracia tras desgracia, cada intento de relacion romantica seria del pobre hombre termina en tragedia. Ya sea si hablamos de su primera esposa Maude Flanders o con quien se casaria despues; Edna Krabappel, ambas murieron de manera repentina dejando a nuestro vecino favorito totalmente desolado.
+            <br><br>
+            En el caso de Maude su muerte repentina fue provocada porque la actriz de voz Maggie Roswell, quien encarnaba a este personaje, pidio un aumento salarial a los productores de la serie, los cuales se negaron rotundamente por lo que la mujer estaunidense dio un paso al costado en el proyecto y tuvieron que terminar con la vida de Maude.
+            <br><br>
+            Diferente fue para Edna que, lamentablemente, su actriz de voz fallecio en el 2013, asique en honor a Marcia Wallace terminaron tambien con el personaje al que le prestaba la voz dentro del universo de Los Simpsons.
+        <br><br>
+        </p>
+        <a href="../index.html"><button class="buttom-return">Volver a la pagina principal</button></a>
+    </main>
+    <!--Inicio de Footer de Martín-->
+    <footer>
+        <div class="grid-container-martin">
+                <div class="item3-footer-martin">
+                    <!-- Footer1 para el logo. Use figure para poder contener bien la img del logo -->
+                    <figure>
+                        <a href="#">
+                            <img src="../img/02.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            
+                <div class="item4-footer-martin">
+                    <!-- Footer2 para hablar sobre nosotros. -->
+                        <a href="../html/nosotros.html" target="self">
+                            <img src="../img/boton7.png" alt="Sobre Nosotros" width="300px" height="80px">
+                        </a>
+                </div>
+            
+                <div class="item5-footer-martin">
+                    <!-- Footer3 para poner las redes sociales. Decidi hacerlo minimalistas con solo 1 color, use iconos de fontawesome -->
+                    <h2>Seguinos:</h2>
+            
+                    <div class="social-media">
+                        <div><a href="#" class="fa fa-facebook"></a></div>
+                        <div><a href="#" class="fa fa-twitter"></a></div>
+                        <div><a href="#" class="fa fa-instagram"></a></div>
+                    </div>
+            
+                </div>
+            
+                <div class="item6-footer-martin">
+                    <!-- Footer4 para los derechos de autor. Decidi agregar esto para darle algo mas al footer -->
+                    <small>Copyright &copy; 2022 <b>CODE of war</b> - Todos los Derechos Reservados.</small>
+                </div>
+            
+            </div>
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/35882933df.js" crossorigin="anonymous">
+    </script>
+    <!-- Script FontAwesome Galileo -->
+    <script src="https://kit.fontawesome.com/c8392acb0b.js" crossorigin="anonymous">
+    </script>
+</body>
+</html>

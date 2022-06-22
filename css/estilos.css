@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: simpsons;
+    src: url(../fonts/Simpsonfont.otf);
+}
+
+/*Inicio de Slider-Galileo*/
+
+.contenedor-galileo{
+    margin-top: 6%;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 80vh;
+}
+
+.carousel-item {
+    max-height: 42rem !important;
+}
+
+@media screen and (max-width:900px){
+    .contenedor-galileo {
+        margin-top: 7.5%;
+    }
+}
+
+/*Fin de Slider-Galileo*/
+
+/*Inicio de Primera Columna-Fran*/
+
+.contenedor-ambas-columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-column-lobby {
+    width: 23vw;
+    background-color: #F5B6CF;
+    background-image: url("../assets/i8.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    height: 153vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-column-lobby,
+.second-column-lobby, 
+.three-column-lobby {
+    border-top: 2px solid #4ebde6;
+    padding-top: 3vh;
+    
+}
+
+.three-column-lobby{
+    padding-bottom: 5vh;
+}
+
+#first-column-lobby h5,
+.second-column-lobby h5, 
+.three-column-lobby h5{
+    font-weight: 600;
+}
+
+#first-column-lobby a,
+.second-column-lobby a, 
+.three-column-lobby a{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#first-column-lobby a:hover,
+.second-column-lobby a:hover, 
+.three-column-lobby a:hover{
+    color: #00AFEF;
+    font-weight: 600;
+}
+
+.new-col1-img {
+    width: 210px;
+    height: 150px;
+    margin: 20px 30px;
+    border: 5px solid #00AFEF;
+}
+
+/*Fin de Primera Columna Fran*/
+
+/*Inicio de Enlaces de la primera columna de Fran*/
+body{
+    background-color: #44ccfd !important;
+}
+.new-main{
+    margin: 20vh 15vw 3vh 15vw;
+    border: 40px solid #ffc107;
+    background-color: #00afef;
+    color: white;
+}
+.img-new-main{
+    margin: 5vh 0vw 3vh 15.5vw;
+    width: 33vw;
+    height: 40vh;
+}
+.title-main-new{
+text-align: center;
+}
+.text-main-new{
+    margin: 5vh 5vw;
+}
+.buttom-return{
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    border: 1px solid #0da2d8;
+    background-color: #00bbff;
+    padding: 5px;
+    color: white;
+}
+@media screen and (max-width: 820px){
+
+    .img-new-main{
+        margin: 5vh 0vw 3vh 8.5vw;
+        width: 40vw;
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .img-new-main{
+        margin: 5vh 0vw 3vh 5vw;
+        width: 40vw;
+        height: 14vh;
+    }
+}
+
+/*Fin de Enlaces de la primera columna de Fran*/
+
+/*Imagen de fondo*/
+
+.fondo-contenedor{
+    background-image: url("../assets/i9.jpg");
+    background-size: cover;
+}
+
+/*Inicio de Segunda Columna-Galileo*/
+
+.segunda-col-galileo {
+    display: flex;
+    height: 153vh;
+    float: right;
+    flex-direction: column;
+    align-items: center;
+    width: 23vw;
+    background-image: url("../assets/i10.webp");
+    background-size: cover;
+}
+
+/* Buscador */
+
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.buscador-galileo {
+    margin-top: 40px;
+    width: 20vw;
+    height: 44px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.buscador-galileo:hover {
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+/*Segunda parte de la columna*/
+
+.categorias-galileo {
+    margin: 20px 5px;
+}
+
+.categorias-galileo ul li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.categorias-galileo ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.categorias-galileo ul li a:hover {
+    color: yellow;
+}
+
+.fa-angles-right {
+    margin-right: 10px;
+    color: #fff;
+}
+
+/*Tercera parte de la columna*/
+
+.publicidad-galileo {
+    background-image: url("../assets/i6.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 80%;
+    transition: all 2s;
+}
+.publicidad-galileo:hover {
+    background-image: url("../assets/i7.jpg");
+}
+.contenido-medio iframe {
+    width: 50vw; 
+    height: 70vh;
+    margin-top: 5vh; 
+}
+
+/*** ESTILOS BOTÓN SLIDE RIGHT ***/
+.ov-btn-slide-right {
+    font-weight: 600;
+    text-decoration: none;
+    background: #fff; 
+    color: #00afef98;
+    border: 3px solid #00afef98; 
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    }
+    .ov-btn-slide-right:hover {
+    color: #fff; 
+    }
+    .ov-btn-slide-right::after {
+    content: "";
+    background: #00AFEF98; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    }
+    .ov-btn-slide-right:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    }
+
+
+    @media screen and (max-width:768px){
+        .contenedor-ambas-columnas {
+            flex-direction: column;
+        }
+        .first-column-lobby{
+            width: 100vw;
+            height: 165vh;
+            border: none;
+        }
+        .segunda-col-galileo {
+            float: none;
+            width: 100vw;
+            align-items: stretch;
+            font-size: 19px;
+            height: 120vh !important;
+            border-left: none;
+        }
+        .buscador-galileo {
+            width: 70vw;
+            margin-left: 5vw;
+        }
+        .publicidad-galileo{
+            display: none;
+        }
+        .ov-btn-slide-right {
+            border: none;
+        }
+        .contenido-medio iframe {
+            width: 100vw; 
+            height: 60vh;
+            margin: 0; 
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 60vh;
+        }
+        
+    }
+    @media screen and (min-width:769px) and (max-width:1074px){
+        .segunda-col-galileo{
+            height: 190vh !important;
+        }
+        .first-column-lobby {
+            width: 77vw;
+        }
+        .publicidad-galileo {
+            display: none;
+        }
+        .ov-btn-slide-right{
+            margin-top: 20px;
+        }
+    }
+    @media screen and (min-height:500px) and (max-height:750px){
+        .segunda-col-galileo, 
+        .first-column-lobby {
+            height: 190vh;  
+    }
+}
